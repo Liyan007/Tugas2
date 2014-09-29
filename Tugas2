@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <conio.h>
+main ()
+{
+float sisi, r, t, hasil;
+int jenis;
+    printf("\t\t++++++++++++++++++\n");
+    printf("\t\t++> MENGHITUNG <++\n");
+    printf("\t\t++++++++++++++++++\n");
+    printf("\t##################################\n");
+    printf("\t##Nama : Lilian Nur Sasongko    ##\n");
+    printf("\t##NIM  : 3143111043             ##\n");
+    printf("\t##Prodi: Manajemen Informatika A##\n");
+    printf("\t##################################\n");
+    printf("------------------------------------\n");
+    ulang:
+    printf("Pilihlah Perhitungan yg ada dibawah ini :\n");
+    printf("1. Menghitung Volume Kubus.\n");
+    printf("2. Menghitung Luas Lingkaran.\n");
+    printf("3. Menghitung Volum Silinder.\n");
+    printf("------------------------------------\n");
+    printf("Pilihan Nomor :"); scanf("%d", &jenis);
+    printf("------------------------------------\n");
+switch(jenis)
+{
+case 1:
+    printf("Masukkan Panjang Sisi Kubus :"); scanf("%f", &sisi);
+    hasil=sisi*sisi*sisi;
+    printf("------------------------------------\n");
+    printf("Hasil Volum Kubus :%.2f\n", hasil);
+    printf("====================================\n");
+    break;
+case 2:
+    printf("Masukkan Panjang jari* Lingkaran :"); scanf("%f", &r);
+    hasil=3.14*r;
+    printf("------------------------------------\n");
+    printf("Hasil Luas Lingkaran :%.2f\n", hasil);
+    printf("====================================\n");
+    break;
+case 3:
+    printf("Masukkan Panjang Jari* Lingkaran :"); scanf("%f", &r);
+    printf("Masukkan Tinggi Silinder         :"); scanf("%f", &t);
+    hasil=3.14*r*t;
+    printf("------------------------------------\n");
+    printf("Hasil Volum Silinder :%.2f\n", hasil);
+    printf("====================================\n");
+    break;
+    getch();
+default:
+    printf("Pilihan yg anda masukkan SALAH :( \n");
+    printf("====================================\n");
+    printf("====================================\n");
+    goto ulang;
+}
+}
