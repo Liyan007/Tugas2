@@ -25,14 +25,14 @@ switch(jenis)
 {
 case 1:
     printf("Masukkan Panjang Sisi Kubus :"); scanf("%f", &sisi);
-    hasil=sisi*sisi*sisi;
+    hasil=pow(sisi,3);
     printf("------------------------------------\n");
     printf("Hasil Volum Kubus :%.2f\n", hasil);
     printf("====================================\n");
     break;
 case 2:
     printf("Masukkan Panjang jari* Lingkaran :"); scanf("%f", &r);
-    hasil=3.14*r;
+    hasil=3.14*pow(r,2);
     printf("------------------------------------\n");
     printf("Hasil Luas Lingkaran :%.2f\n", hasil);
     printf("====================================\n");
